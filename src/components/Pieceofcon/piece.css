@@ -1,0 +1,102 @@
+.maincontact {
+    width: 100%;
+
+  
+
+    background-color: rgb(0, 0, 0);
+    padding: 6vw 0vw;
+}
+
+.downfall {
+    background-color: rgb(37 37 37);
+    will-change: transform;
+    opacity: 1;
+    height: 1.3px;
+    margin-top: 1em;
+    transform: none;
+
+}
+.contentofcontacts{
+    display: flex;justify-content: space-between;
+}
+.imgcon {
+    width: 50%;padding: 2vw;z-index: 12;
+
+}
+.rwcontents{font-family: interbold;letter-spacing: -0.0.2em;
+    display: flex;justify-content: space-between;align-items: center;font-size: 0.97em;font-weight: 900;
+}
+
+.condetail {
+   
+    width: 40%;
+    padding: 2vw 4vw;
+
+}
+
+.imgcon img {
+    width: 490px;
+    height: 346px;
+    border-radius: 10px;
+}
+
+.contactrows {
+    color: white;
+    margin: 1px 2px;
+    padding: 0.5vw 0.1vw;
+    /* height: 12vh; */
+    width: 100%;
+  
+}
+
+
+.contactbigtext{
+    width: 100%;    
+    height: 40vh;
+    color: #fff;
+}
+
+.contactbigtext p{
+    font-size: clamp(3rem, 17vw, 20rem);white-space: nowrap;
+    letter-spacing: -15px;
+    font-family: interbold;line-height: 80%;
+}
+
+
+.rwcontents img{    width: 11px;
+    height: 11px;object-fit: cover;}
+@media (max-width:1200px){
+    .contentofcontacts{
+        flex-direction: column;
+    }
+    .imgcon,.condetail{
+        width: 100%;
+    }
+    .imgcon img{
+        width: 100%;
+       
+    }
+    .contactbigtext p{
+        letter-spacing: -5px;
+    }.skillset{
+        margin-top: 0em;
+    }
+  
+}
+
+@media (max-width:800px){
+   
+    .rwcontents{
+        font-size: 0.81em;
+    }
+    .contactbigtext{
+            width: 100%;
+    height: 11vh;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    color: #fff;
+    }
+}
+

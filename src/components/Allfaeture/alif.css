@@ -1,0 +1,61 @@
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.project-main-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s all ease;
+}
+
+.project-small-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease;
+}
+
+.project-small-image img {
+  border-radius: 10px;
+}
+
+.project-card:hover .project-small-image {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.project-captions {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-index {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 1200px) {
+  .project-card {
+    flex-direction: column;
+    gap: 4em;
+  }
+}

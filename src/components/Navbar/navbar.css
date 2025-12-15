@@ -1,0 +1,73 @@
+header {
+    width: 100%;
+    min-height: 12vh;position: fixed;top: 0;
+    padding: 1.1vw 2vw;z-index: 999;
+    background-color: rgb(0, 0, 0);
+}
+
+.navsections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+    margin: 8px 8px 8px 8px;
+    color: white;
+}
+
+.headlinkshome {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiklinksrowsetup {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.headnamesection {
+    font-size: 1.3em;width: 30%;margin-top: 0.5em;font-weight: 900;
+}
+
+.quicklinks {
+    font-size: 1em;
+}
+
+.quiklinksrowsetup p {
+   
+        color: #999999;
+    font-weight: 900;
+    font-size: 0.80em;
+}
+
+.bghworkname {
+    font-size: 0.78em;
+    color: #999999;
+}
+.headnamesection p {
+    color: #fff;
+}
+
+header .hr{
+    background-color: rgb(37 37 37);
+    will-change: transform;
+    opacity: 1;height: 1px;margin-top: 1.5em;
+    transform: none;
+}
+
+
+@media (max-width:1166px) {
+.headdev{
+    display: none;
+}
+}
+@media (max-width:600px) {
+.headdev{
+    display: none;
+}
+header{
+padding: 2.1vw 2vw;
+}
+
+}

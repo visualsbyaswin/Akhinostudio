@@ -1,0 +1,34 @@
+
+
+.statergy1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* allows items to stack on small screens */
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items: center;
+    z-index: 11;
+   
+    padding: 1px 1px;
+    background-color: #fff;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+
+
+ 
+  .statergy1 {
+        margin-top: 1rem;
+       gap: 5px;
+    }
+    .statergy1 p{
+         font-size: 11px;
+    }
+  
+}
+

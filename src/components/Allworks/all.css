@@ -1,0 +1,11 @@
+.worksecmain{
+    width: 100%;
+    min-height: 120vh;display: flex;gap: 1em;
+    background-color: rgb(242, 0, 255);position: relative;
+}
+.worksec1{
+    flex: 1;background-color: red;position: relative;
+}
+.worksec2{
+    flex: 2;background-color: blue;
+}

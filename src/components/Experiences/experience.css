@@ -1,0 +1,82 @@
+.Experiences {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.autoslidingsectionmain {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vh;
+    align-items: center;
+    padding: 2vw 2vw;
+}
+
+.partners {
+    width: 100%;
+    padding: 2vw 2vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* background-color: rgb(255, 140, 0); */
+}
+
+.partnersection {
+    display: flex;
+    color: #fff;
+    font-family: interbold;
+    font-weight: 900;
+    justify-content: space-between;
+}
+
+.fpartofexp,
+.spartofexp {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.autoslider {
+    font-size: 13vw;
+    font-weight: 900;
+    font-family: interbold;
+    color: #fff;
+    letter-spacing: -17px;
+}
+
+.autoimage {
+    width: 136px;
+    height: 196px;
+}
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .partnersection {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .fpartofexp,
+    .spartofexp {
+        width: 100%;
+    }
+
+    .autoslider {
+        letter-spacing: -10px;
+    }
+}
+
+@media (max-width:500px) {
+    .autoslider {
+        letter-spacing: -2px;
+    }
+
+}

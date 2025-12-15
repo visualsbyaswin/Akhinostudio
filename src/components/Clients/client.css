@@ -1,0 +1,15 @@
+.clients{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.clientheading{
+    
+font-size: clamp(3rem, 7vw, 9rem);
+
+    color: white;
+    letter-spacing: -0.1em;
+    font-weight: 700;
+    font-family: interbold
+}

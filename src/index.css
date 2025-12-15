@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: white;color: black;overflow: hidden;
+}
+button{
+    user-select: none;
+}
+@font-face {
+    font-family: hii;
+    src: url("./assets/fonts/dHHUz45rhM2KCQpj9zttNVlibk.ttf");
+}
+
+@font-face {
+    font-family: interbold;
+    src: url("./assets/fonts/Inter-Bold.woff");
+}
+@font-face {
+    font-family: extra;
+    src: url("./assets/fonts/Inter-ExtraBold.woff");
+}
+body,
+html {
+    font-family: hii, "Inter Display Placeholder", sans-serif;
+    width: 100%;
+    height: 100%;cursor: none;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.revealer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    pointer-events: none;
+    z-index: 9999999;
+    width: 100vw;
+    background-color:black;
+    height: 100svh;
+    transform-origin: center top;
+}

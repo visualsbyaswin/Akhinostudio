@@ -1,0 +1,37 @@
+.ban{
+    position: relative;
+}
+
+.skillset {
+width: 100%;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items: center;
+    position: absolute;
+    z-index: 11;
+margin-top: -8em;
+    padding: 1px 1px;
+    background-color: #fff;
+   
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+
+
+ .skillset {
+        margin-top: 1rem;
+       gap: 5px;
+    }
+    .skillset p{
+         font-size: 11px;
+    }
+
+  
+}

@@ -1,0 +1,12 @@
+:root{--bg:#000000;--fg:#ffffff;}
+
+
+
+
+
+.mcontact section{
+    position: relative;
+    width: 100%;background-color: var(--bg);color: var(--fg)
+    ;display: flex;justify-content: center;align-items: center;text-align: center;
+    min-height: 100svh;
+}

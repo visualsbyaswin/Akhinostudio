@@ -1,0 +1,251 @@
+/* .scroll-section {
+  min-height: 200vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f550;
+}
+
+.scroll-text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;display: flex;
+  color: #ff0000;flex-wrap: wrap;
+  max-width: 600px;
+  text-align: left;
+}
+
+.scroll-text .line {
+  opacity: 0.3;
+  transform: translateY(30px);
+} */
+.art{
+  position: relative;
+}
+/* Smooth scrolling container */
+.smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.smooth-content {
+  will-change: transform;
+  min-height: 400vh; /* ensures scroll space */
+}
+
+.spacer {
+  height: 100vh; /* top space before first card */
+}
+
+/* Base layout */
+.spacer,
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stacked cards layout */
+.stacked-cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Each card */
+.card {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  border-radius: 18px;
+  margin-bottom: 75px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.21),
+              0 6px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  position: relative;
+}
+
+/* Content and image split layout */
+/* .card-content,
+.img-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.card-content h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  will-change: clip-path;
+}
+
+
+.card:not(:last-child) {
+  margin-bottom: 10vh;
+}
+
+.animated-btn {
+  padding: 1rem 2.5rem;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.animated-btn span {
+  display: inline-block;
+  will-change: transform;
+} */
+
+
+/* .team-section {
+  padding: 5rem 2rem;
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+  perspective: 1000px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.team-card {
+  background: #111;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.team-image-container {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.team-name span {
+  display: inline-block;
+  opacity: 0;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: #aaa;
+} */
+
+
+/* cursor.css */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.05);
+}
+
+.cursor-btn {
+  pointer-events: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  background: black;
+  color: white;
+}
+
+/* Example hover div */
+.hover-target {
+  width: 200px;
+  height: 100px;
+  background: #ff9800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}

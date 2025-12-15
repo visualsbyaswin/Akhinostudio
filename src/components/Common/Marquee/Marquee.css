@@ -1,0 +1,46 @@
+.marquee{
+      width: 100%;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-size: 17rem;
+    letter-spacing: -10px;
+    font-family: extra;
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex
+;
+    position: relative;
+}
+.marquee_inner{
+    display: flex;
+    animation: scroll 68s infinite;
+}
+.marquee_inner span{
+      
+        padding: 0 2rem;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive text size */
+@media (max-width: 768px) {
+  .marquee {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .marquee {
+    font-size: 5rem;letter-spacing: -5px;
+  }
+  .marquee_inner{
+
+    animation: scroll 58s infinite;
+}
+}

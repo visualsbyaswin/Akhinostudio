@@ -1,0 +1,200 @@
+.hero {
+    width: 100%;
+    min-height: 85vh;
+    overflow-x: hidden;position: relative;
+    padding: 5vw 1vw;
+    margin-top: 3em;
+}
+
+.firstherocontents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;position: relative;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+.texthero {
+    font-size: clamp(1.5rem, 2.8vw, 2.33em);
+    /* fluid text scaling */
+    color: white;
+    padding: 0vw 1vw;
+    line-height: 115%;
+}
+
+.videohero {
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    width: 100%;
+    justify-content: flex-end;
+    max-width: 550px;
+    /* prevents oversized video */
+}
+
+.videohero video {
+    width: 80%;
+    height: auto;
+    position: relative;
+    max-height: 390px;
+    overflow: hidden;
+
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.statergy {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* allows items to stack on small screens */
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items: center;
+    z-index: 11;
+    padding: 1px 1px;
+    background-color: #fff;
+}
+
+.hrr {
+    background-color: rgb(37, 37, 37);
+    opacity: 1;
+    height: 1px;
+    margin-top: 10em;
+}
+
+.hrrs {
+    margin-top: 0em;
+    background-color: rgb(37, 37, 37);
+    opacity: 1;
+    height: 1px;
+}
+
+.akhinobigtext {
+    width: 100%;
+    z-index: 400;
+    overflow: hidden;
+    /* min-height: 40vh; */
+    background-color: #000;
+    display: flex;
+    font-family: interbold;
+    justify-content: center;
+    align-items: center;
+}
+
+.akhinobigtext p {
+    font-size: clamp(5rem, 25vw, 26rem);
+    /* fluid scaling instead of fixed em */
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    /* prevents word wrapping */
+}
+
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .texthero {
+        font-size: clamp(1.1rem, 2vw, 2em);
+    }
+
+    .akhinobigtext p {
+        font-size: clamp(4rem, 18vw, 16rem);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .firstherocontents {
+        flex-direction: column;
+        margin-top: 2em;
+
+
+    }
+
+    .videohero {
+        margin: 0 auto;
+    }
+
+
+    .texthero {
+        font-size: clamp(1rem, 4vw, 1.5em);
+        letter-spacing: -0.5px;
+    }
+
+    .akhinobigtext p {
+        font-size: clamp(4rem, 27vw, 12rem);
+        line-height: 80%;
+
+    }
+
+    .videohero video {
+        width: 100%;
+
+        max-height: 220px;
+
+    }
+
+    .statergy {
+        margin-top: 1rem;
+        font-size: 11px;
+    }
+
+    .hrr,
+    .hrrs {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width:450px) {
+    .firstherocontents {
+        padding: 2vw 2vw;
+    }
+
+    .videohero {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+.videohero {
+    position: relative;
+
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    mix-blend-mode: difference;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background 0.3s ease, color 0.3s ease;
+    pointer-events: none;
+}
+
+.hover-button:hover {
+    background: black;
+    color: white;
+}

@@ -1,0 +1,13 @@
+.worksection{
+    width: 100%;background-color: red;
+    min-height: 120vh;display: flex;
+    gap: 4px;
+
+}
+
+.h1worksection{
+    flex: 1;background-color: blue;
+}
+.countercomponent{
+    flex: 1;background-color: green;
+}
